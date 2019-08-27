@@ -24,9 +24,11 @@ gapminder_unfiltered
 
 ```{r}
 gapminder_unfiltered %>%
-  group_by(country, year) %>%
-  summarize(lifeExp) %>%
-  arrange(desc(lifeExp))
+  group_by(year) %>%
+  filter(lifeExp == max(lifeExp)) %>%
+  select(country, lifeExp, year) %>%
+  arrange(year) ->
+  sum_data_lifeexp
 ```
 
 
