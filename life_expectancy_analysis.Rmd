@@ -15,14 +15,15 @@ Here we examine the life-expectancy data!
 ```{r}
 library(tidyverse)
 library(gapminder)
+data("gapminder_unfiltered")
 ```
 
 ```{r}
-gapminder
+gapminder_unfiltered
 ```
 
 ```{r}
-gapminder %>%
+gapminder_unfiltered %>%
   group_by(country, year) %>%
   summarize(lifeExp) %>%
   arrange(desc(lifeExp))
