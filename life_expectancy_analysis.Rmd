@@ -12,6 +12,8 @@ Here we examine the life-expectancy data!
 
 #Life Expectancy Analysis
 
+We will first clean the data
+
 ```{r}
 library(tidyverse)
 library(gapminder)
@@ -32,4 +34,4 @@ gapminder_unfiltered %>%
 ```
 
 
-
+We will now recreate the plot from Oeppen and Vaupel (2002).
