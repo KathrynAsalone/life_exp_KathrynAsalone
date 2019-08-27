@@ -1,0 +1,14 @@
+---
+title: "life_expectancy"
+author: "Katie Asalone"
+date: "8/27/2019"
+output: html_document
+---
+
+
+#Abstract
+
+Here we examine the life-expectancy data! 
+
+#Analysis
+
