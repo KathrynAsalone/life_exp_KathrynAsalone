@@ -1,5 +1,5 @@
 ---
-title: "life_expectancy"
+title: "Life Expectancy"
 author: "Katie Asalone"
 date: "8/27/2019"
 output: html_document
@@ -10,5 +10,23 @@ output: html_document
 
 Here we examine the life-expectancy data! 
 
-#Analysis
+#Life Expectancy Analysis
+
+```{r}
+library(tidyverse)
+library(gapminder)
+```
+
+```{r}
+gapminder
+```
+
+```{r}
+gapminder %>%
+  group_by(country, year) %>%
+  summarize(lifeExp) %>%
+  arrange(desc(lifeExp))
+```
+
+
 
