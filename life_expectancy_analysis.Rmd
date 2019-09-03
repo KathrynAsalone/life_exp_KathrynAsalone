@@ -37,6 +37,13 @@ gapminder_unfiltered %>%
 We will now recreate the plot from Oeppen and Vaupel (2002).
 
 ```{r}
-
+sum_data_lifeexp %>%
+  ggplot(aes(x = year, y = lifeExp)) +
+  geom_smooth(method = "lm", se = FALSE) +
+  xlab("Year") +
+  ylab("Maximim Life Expectancy") +
+  theme_bw() + 
+  geom_point(aes(color = country)) + #applies color only to country, not geom_smooth
+  geom_point(shape = 1)
 ```
 
