@@ -44,6 +44,7 @@ sum_data_lifeexp %>%
   ylab("Maximim Life Expectancy") +
   theme_bw() + 
   geom_point(aes(color = country)) + #applies color only to country, not geom_smooth
-  geom_point(shape = 1)
+  geom_point(shape = 1) +
+  scale_color_discrete(name = "Country")
 ```
 
