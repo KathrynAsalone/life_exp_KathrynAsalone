@@ -35,3 +35,8 @@ gapminder_unfiltered %>%
 
 
 We will now recreate the plot from Oeppen and Vaupel (2002).
+
+```{r}
+
+```
+
